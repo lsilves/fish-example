@@ -19,3 +19,9 @@ body {
     background-color: #2b4764 !important;
     border-color: #28415b !important;
 }
+
+@media only screen and (max-width: 700px) {
+    .enlarged-img {
+        max-width:350px;
+    }
+}
