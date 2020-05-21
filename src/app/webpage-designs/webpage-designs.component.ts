@@ -27,7 +27,7 @@ export class WebpageDesignsComponent implements OnInit {
     {
       image:"https://i.imgur.com/NZeOGHz.gif",
       description:"Customer sales web app.",
-      tools: "React, Bootstrap, HTML",
+      tools: "React, Bootstrap",
       siteURL: "https://enigmatic-sierra-63091.herokuapp.com/",
       alt: "customer sales app",
       enlargeImage: false
