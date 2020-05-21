@@ -19,7 +19,7 @@
               <img [src]="graphic.image" class="enlarged-img" *ngIf="graphic.enlargeImage" (click)="graphic.enlargeImage = !graphic.enlargeImage" [alt]="graphic.alt">
             </td>
             <td> 
-              {{ graphic.description }} <span *ngIf="graphic.siteURL == 'https://dreamy-yonath-9e7f5b.netlify.app/home'"> <a href='https://dreamy-yonath-9e7f5b.netlify.app/admin'>please feel free to test this feature.</a></span><br><br>
+              {{ graphic.description }} <span *ngIf="graphic.siteURL == 'https://dreamy-yonath-9e7f5b.netlify.app/home'"> <a href='https://dreamy-yonath-9e7f5b.netlify.app/admin'>please feel free to test this feature.</a> Note: search is not currently enabled.</span><br><br>
               <span><b>Tools:</b> {{graphic.tools}}</span><span *ngIf="graphic.siteURL == 'https://dreamy-yonath-9e7f5b.netlify.app/home'"><a href='https://startbootstrap.com/templates/blog'>Bootstrap's Blog Design Template</a></span>
             </td>
             <td>
