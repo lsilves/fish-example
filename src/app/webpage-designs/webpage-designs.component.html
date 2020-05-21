@@ -1,0 +1,75 @@
+
+
+
+<div class="container" style="margin-top: 70px;">
+    <h1>Webpage Designs</h1>
+    <p><b>This section shows some examples of webpages I've built. To enlarge an image, please click on the thumbnail.</b></p><br><br>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Thumbnail</th>
+            <th>Description</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let graphic of graphics">
+            <td>
+              <img [src]="graphic.image" class="thumbnail-img" *ngIf="!graphic.enlargeImage" (click)="graphic.enlargeImage = !graphic.enlargeImage" [alt]="graphic.alt">
+              <img [src]="graphic.image" class="enlarged-img" *ngIf="graphic.enlargeImage" (click)="graphic.enlargeImage = !graphic.enlargeImage" [alt]="graphic.alt">
+            </td>
+            <td> 
+              {{ graphic.description }} <span *ngIf="graphic.siteURL == 'https://dreamy-yonath-9e7f5b.netlify.app/home'"> <a href='https://dreamy-yonath-9e7f5b.netlify.app/admin'>please feel free to test this feature.</a></span><br><br> <span *ngIf="graphic.siteURL == 'https://dreamy-yonath-9e7f5b.netlify.app/home'"><a href='https://startbootstrap.com/templates/blog'>Link to Bootstrap blog design template.</a></span>
+            </td>
+            <td>
+              <a [href]="graphic.siteURL"><div class="btn btn-primary" *ngIf="graphic.siteURL != ''">View</div></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+  
+  
+  
+    <!-- <img class="fish-img" src="https://i.imgur.com/KQYjlbq.png" title="source: imgur.com" />
+  <img class="fish-img" src="https://i.imgur.com/Tx2scGo.png" title="source: imgur.com" />
+  <img class="fish-img" src="https://i.imgur.com/ZiqMpST.png" title="source: imgur.com" /> -->
+  
+  
+  <!-- <div class="container" style="margin-top: 70px;">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+    
+            <td>{{ contact.id }}</td>
+            <td> {{ contact.name }}</td>
+            <td> {{ contact.email }}</td>
+            <td>
+              <button class="btn btn-primary" (click)="selectContact(contact)"> Show details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="card text-center">
+          <div class="card-header">
+            # {{selectedContact.id}}
+          </div>
+          <div class="card-block">
+            <h4 class="card-title">{{selectedContact.name}}</h4>
+            <p class="card-text">
+              {{selectedContact.description}}
+            </p>    
+          </div>
+    
+        </div>
+    </div> -->
+  
+    
