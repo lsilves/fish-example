@@ -1,8 +1,24 @@
 .welcome {
-    max-width:65%;
-    margin-top:10%;
+    font-size:6rem;
+    margin-top:22.5%;
+    color:rgba(255,255,255,.75);
+    font-weight:200;
 }
 .sunflower {
-    max-width:35%;
-    margin-left:55%;
+    max-width:40%;
+    margin-top:20%;
+    //margin-left:55%;
+}
+.portfolio-text {
+    margin-left:15%;
+}
+
+.content {
+    background-color: #343a40 !important;
+}
+
+.lead {
+    overflow:hidden;
+    position:fixed;
+    margin-left:7.5%
 }

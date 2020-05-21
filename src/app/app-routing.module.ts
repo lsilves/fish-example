@@ -6,7 +6,7 @@ import { AssortedGraphicsComponent } from './assorted-graphics/assorted-graphics
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent, data: { bodyClass: 'dark' } },
   { path: 'webpages', component: WebpageDesignsComponent },
   { path: 'graphics', component: AssortedGraphicsComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
