@@ -9,7 +9,7 @@ export class AssortedGraphicsComponent implements OnInit {
   graphics = [
     {
       image:"https://i.imgur.com/ZiqMpST.png",
-      description:"Several vector-based graphics of fish inspired by a recent fishing trip.",
+      description:"Several vector-based graphics of fish inspired by a recent fishing trip. Click to view more.",
       medium: "Adobe Illustrator",
       bigImageURL:"https://i.imgur.com/3Uiudbg.png",
       alt: "fish vectors",
