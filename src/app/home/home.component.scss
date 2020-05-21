@@ -22,12 +22,53 @@
     position:fixed;
     margin-left:7.5%
 }
-@media only screen and (max-width: 700px) {
+// @media only screen and (max-width: 700px) {
+//     .welcome {
+//         font-size:4rem !important;
+//     }
+//     .sunflower {
+//         margin-top:75%;
+//         margin-right:50%;
+//     }
+// }
+@media only screen and (max-width: 985px) {
     .welcome {
         font-size:4rem !important;
     }
     .sunflower {
+        max-width:250px;
         margin-top:75%;
         margin-right:50%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .welcome {
+        font-size:4rem !important;
+    }
+    .sunflower {
+        max-width:150px;
+        margin-top:75%;
+        margin-left:-33%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .welcome {
+        font-size:4rem !important;
+    }
+    .sunflower {
+        max-width:75px;
+        margin-top:75%;
+        margin-left:-33%;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .welcome {
+        font-size:4rem !important;
+    }
+    .sunflower {
+        max-width:50px;
+        margin-top:85%;
+        //margin-right:75%;
+        margin-left:-33%;
     }
 }
