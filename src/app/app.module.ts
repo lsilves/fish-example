@@ -8,6 +8,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { SunflowerComponent } from './sunflower/sunflower.component';
 import { WebpageDesignsComponent } from './webpage-designs/webpage-designs.component';
 import { AssortedGraphicsComponent } from './assorted-graphics/assorted-graphics.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AssortedGraphicsComponent } from './assorted-graphics/assorted-graphics
     NavigationBarComponent,
     SunflowerComponent,
     WebpageDesignsComponent,
-    AssortedGraphicsComponent
+    AssortedGraphicsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
