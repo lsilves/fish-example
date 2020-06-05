@@ -17,11 +17,11 @@ export class WebpageDesignsComponent implements OnInit {
       enlargeImage: false
     },
     {
-      image: "https://i.imgur.com/XF9FHIZ.png",
-      description: "A child-friendly layout I designed and built for fun, on my local system.",
-      tools: "Paper Prototyping, HTML, CSS",
+      image: "https://i.imgur.com/Zzm2pVQ.png",
+      description: "A mock-up of a fabric store's catalogue.",
+      tools: "Adobe XD",
       siteURL: "",
-      alt: "fun design",
+      alt: "fabric store catalogue",
       enlargeImage: false
     },
     {

@@ -1,3 +1,22 @@
-<div class="container" style="">
-    <p>test</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 divider" >
+            <div class="about-nav">
+                <h1>About</h1>
+                <hr>
+            </div>
+            <h5 class="who" (click)="who = !who">Who am I?</h5>
+            <p *ngIf="who">I am a freshly minted web developer, currently looking to work in a front-end development position. I have a background in e-commerce, consisting of building CMS components, designing and developing corporate webpages, and maintaining various internal tools. I am especially passionate about UX and UI design. </p>
+                <h5 class="how" (click)="how = !how">How I got Here</h5>
+                <p *ngIf="how">Prior to completing Seneca College’s Computer Programming diploma, I completed a Bachelor of Arts in Sociology at the University of Guelph. During my Bachelors, I developed a particular interest in how people interact with technology and took courses on computer systems and user interface design. Entering a new academic field with the goal of becoming a web developer, I had the opportunity to intern as a full-stack developer for Softchoice. During my co-op, I built product pages for multi-million dollar clients, redesigned internal tools and sections of the Softchoice website, and built reuseable components for a new headless CMS. </p>
+                
+                <h5 class="interests" (click)="interests = !interests">My Interests</h5>
+                <p *ngIf="interests">Working in a creative and technical field, I draw a lot of inspiration from science fiction. William Gibson’s Neuromancer and Ursula Leguin’s The Left Hand of Darkness are long time favourites in terms of novels, while Black Mirror and Futurama are my favourite TV series. Exercise and being outdoors with loved ones is central to my wellbeing - a precept I live out through activities such as sailing, skiing, and camping. </p>
+                <hr>
+                <p style="text-align:center">Reach out to laura.susanne.ilves@gmail.com to connect with me.</p>
+          </div>
+          <div class="col-sm-4 graphics">
+            <img src="https://i.imgur.com/6P7qtR7.png">
+          </div>
+    </div>
 </div>

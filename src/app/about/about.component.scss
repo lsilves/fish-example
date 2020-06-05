@@ -4,4 +4,35 @@
     height: 75vh;
     margin-top: 16vh;
     box-shadow:0px 20px 13px #2e3238;
+    color:#ddeaf7;
+    padding-bottom:5vh;
+    h1 {
+        color:unset !important;
+    }
+    hr {
+        width:100vw;
+        margin-left:-15%;
+        background-color: #2D3137;
+    }
+    img {
+        width:inherit;
+    }
+    // p {
+    //     text-indent:3em;
+    // }
+    .who, .how, .interests {
+        cursor: pointer;
+    }
+}
+
+.divider {
+    border-right:1px solid #2D3137;
+    height: 75vh;
+    overflow:auto;
+    padding:5vh;
+    padding-top:0 !important;
+}
+
+.graphics {
+    margin-top:15vh;
 }
