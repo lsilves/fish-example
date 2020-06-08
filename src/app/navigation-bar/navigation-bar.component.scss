@@ -2,4 +2,8 @@
     img {
         max-width:50px;
     }
+    img:hover {
+        transition:0.2s;
+        max-width:55px;
+    }
 }

@@ -25,6 +25,10 @@ export class AboutComponent implements OnInit {
   }
 
   openPar(par){
+    setTimeout(() => this.switchPar(par), 150);
+  }
+
+  switchPar(par): void {
     switch(par){
       case 'how' :{
         this.how = !this.how;
@@ -33,7 +37,6 @@ export class AboutComponent implements OnInit {
       }
       break;
       case 'who' :{
-        console.log("who?")
         this.who = !this.who;
         this.how = false;
         this.interests = false;
@@ -46,6 +49,6 @@ export class AboutComponent implements OnInit {
       }
       break;
     }
-  }
 
+  }
 }
