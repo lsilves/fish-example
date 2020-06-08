@@ -18,13 +18,13 @@ app-route {
     background-color:red;
 }
 h1 {
-    margin-top:10% !important;
     color:#343a40 !important;
 }
 .container{
     margin-bottom:5% !important;
 }
 .btn {
+    border-radius:33px !important;
     box-shadow:none !important;
     &.btn-primary{
         color: #fff;
