@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WebpageDesignsComponent implements OnInit {
 
+  curSlide = 0;
   graphics = [
     {
       image: "https://i.imgur.com/a5Iv47T.gif",
@@ -14,7 +15,8 @@ export class WebpageDesignsComponent implements OnInit {
       tools: "Adobe XD, HTML, Vanilla JavaScript, SCSS",
       siteURL: "https://www.softchoice.com/research-studio/events",
       alt: "Softchoice events",
-      enlargeImage: false
+      enlargeImage: false,
+      display:false
     },
     {
       image: "https://i.imgur.com/Zzm2pVQ.png",
@@ -22,7 +24,8 @@ export class WebpageDesignsComponent implements OnInit {
       tools: "Adobe XD",
       siteURL: "",
       alt: "fabric store catalogue",
-      enlargeImage: false
+      enlargeImage: false,
+      display:false
     },
     {
       image:"https://i.imgur.com/NZeOGHz.gif",
@@ -30,7 +33,8 @@ export class WebpageDesignsComponent implements OnInit {
       tools: "React, Bootstrap",
       siteURL: "https://enigmatic-sierra-63091.herokuapp.com/",
       alt: "customer sales app",
-      enlargeImage: false
+      enlargeImage: false,
+      display:false
     },
     {
       image:"https://i.imgur.com/bF5epbB.gif",
@@ -38,12 +42,42 @@ export class WebpageDesignsComponent implements OnInit {
       tools: "Angular, ",
       siteURL: "https://dreamy-yonath-9e7f5b.netlify.app/home",
       alt: "blog web app",
-      enlargeImage: false
+      enlargeImage: false,
+      display:false
     }
   ];
+
+  prevSlide(){
+    let oldSlide = this.curSlide;
+    this.curSlide != 0 ? this.curSlide-- : this.curSlide = (this.graphics.length-1);
+    this.graphics[oldSlide].display = false;
+    this.graphics[this.curSlide].display = true;
+
+    document
+      .getElementById('slide'+this.curSlide)
+      .scrollIntoView({ behavior: 'smooth' });
+
+  }
+
+  nextSlide(){
+    let oldSlide = this.curSlide;
+    this.curSlide != (this.graphics.length-1) ? this.curSlide++ : this.curSlide = 0;
+    this.graphics[oldSlide].display = false;
+    this.graphics[this.curSlide].display = true;
+
+    document
+      .getElementById('slide'+this.curSlide)
+      .scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // openPar(par){
+  //   setTimeout(() => this.switchPar(par), 150);
+  // }
+
   constructor() { }
 
   ngOnInit(): void {
+    this.graphics[this.curSlide].display = true;
   }
 
 }

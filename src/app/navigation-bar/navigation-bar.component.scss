@@ -7,3 +7,21 @@
         max-width:55px;
     }
 }
+
+.navbar {
+    background-color:#FFF !important; //425263
+    //box-shadow:none;
+    //border-bottom:1px solid #000;
+    //1px solid rgba(0,0,0,.1);
+    font-variant:small-caps;
+    font-size:large;
+   a {
+        color:#000;
+   }
+   a:hover {
+        transition:0.4s;
+        color:#bababa ;
+        font-size:1.1em;
+
+   }
+}

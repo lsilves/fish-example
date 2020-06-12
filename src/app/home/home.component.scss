@@ -1,13 +1,25 @@
-.welcome {
-    font-size:6rem;
-    margin-top:22.5%;
-    color:#cbcecf;
-    font-weight:200;
-    font-family: 'Rock Salt', cursive;
+p {
+    font-size:2rem;
 }
+a {
+    color:#000;
+    text-decoration:underline;
+}
+
+.welcome {
+    font-size:4rem;
+    color:black;
+    //font-weight:200;
+    //font-family: 'Rock Salt', cursive;
+    //font-family: 'Nunito Sans', sans-serif;
+    margin-top:17.5%;
+    margin-bottom:auto;
+    text-align:center;
+}
+
 .sunflower {
     max-width:40%;
-    margin-top:20%;
+    margin-top:15%;
     //margin-left:55%;
 }
 .portfolio-text {
@@ -16,6 +28,10 @@
 
 .content {
     background-color: #343a40 !important;
+}
+
+.navbar {
+    display:none !important;
 }
 
 .lead {

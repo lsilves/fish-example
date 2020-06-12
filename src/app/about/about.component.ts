@@ -13,13 +13,13 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
 
-  scrollToBottom(){
-    if(this.who && this.how && this.interests){
-      console.log("THIS IS EVENT.TARGET -> ", (event.target as Element).id);
-      document.getElementById("#interestPar").animate({scrollTop:document.getElementById("#interestPar").scrollHeight}, 1000);
-    }
+  // scrollToBottom(){
+  //   if(this.who && this.how && this.interests){
+  //     console.log("THIS IS EVENT.TARGET -> ", (event.target as Element).id);
+  //     document.getElementById("#interestPar").animate({scrollTop:document.getElementById("#interestPar").scrollHeight}, 1000);
+  //   }
 
-  }
+  // }
 
   ngOnInit(): void {
   }

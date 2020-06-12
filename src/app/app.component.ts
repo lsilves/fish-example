@@ -37,5 +37,5 @@ export class AppComponent {
         this.renderer.addClass(this.document?.body, customBodyClass);
       }
     }
-  title = 'fish-example';
+  title = 'Laura Portfolio';
 }

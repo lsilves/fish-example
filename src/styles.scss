@@ -7,18 +7,25 @@
 @import "../node_modules/bootswatch/dist/materia/bootswatch";
 @import "../node_modules/bootswatch/dist/materia/bootstrap.min.css";
 body{
-    background-color: #f3f3f3 !important;
+    background-color: #fff !important;
     font-family: 'Raleway', sans-serif !important;
 }
 body.dark{
-    background-color: #343a40 !important;
+    background-color: #f9db6d !important; //425263
+    footer {
+        display:none !important;
+    }
+    .navbar {
+        display:none !important;
+    }
 }
 
 app-route {
     background-color:red;
 }
 h1 {
-    color:#343a40 !important;
+    color:#000 !important;
+    font-variant:small-caps;
 }
 .container{
     margin-bottom:5% !important;
@@ -26,14 +33,71 @@ h1 {
 .btn {
     border-radius:33px !important;
     box-shadow:none !important;
-    &.btn-primary{
-        color: #fff;
-        background-color: #375a7f !important;
-        border-color: #375a7f !important;
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+}
+.btn:hover {
+    color: #000 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    
+    border-color: #000 !important;
+}
+
+p {
+    font-size:large;
+}
+
+
+.container {
+    //border-top-left-radius: 50px;
+    //border-top-right-radius: 50px;
+    //padding: 1%;
+    background-color: #FFF;
+    margin-top: 16vh;
+    box-shadow: 0px 2px 13px #cacaca;
+    border:none;
+    color: #000;
+    //border-radius: 1px;
+    h1 {
+        color:unset !important;
     }
-    &.btn-primary:hover {
-        color: #fff;
-        background-color: #2b4764 !important;
-        border-color: #28415b !important;
+    .graphics{
+        text-align:center;
+        img {
+            max-width:100%;
+            opacity:95%;
+        }
     }
+
+    // p {
+    //     text-indent:3em;
+    // }
+    #who, #how, #interests {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    #who:hover, #how:hover, #interests:hover {
+        //opacity:50%;
+        font-size:1.45em;
+    }
+    #who {
+        padding-top:1.5%;
+    }
+    .about {
+        border-bottom:1px solid #cacaca;
+        font-variant:small-caps;
+        //background-color:#f9db6d;
+    }
+}
+
+.navbar-default .navbar-nav > .active{
+    color: pink;
+    background: #d65c14;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #000;
+    background: #d65c14;
 }

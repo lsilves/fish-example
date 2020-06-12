@@ -9,6 +9,7 @@ import { SunflowerComponent } from './sunflower/sunflower.component';
 import { WebpageDesignsComponent } from './webpage-designs/webpage-designs.component';
 import { AssortedGraphicsComponent } from './assorted-graphics/assorted-graphics.component';
 import { AboutComponent } from './about/about.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutComponent } from './about/about.component';
     SunflowerComponent,
     WebpageDesignsComponent,
     AssortedGraphicsComponent,
-    AboutComponent
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -27,4 +29,6 @@ import { AboutComponent } from './about/about.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}
