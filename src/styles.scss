@@ -9,6 +9,7 @@
 body{
     background-color: #fff !important;
     font-family: 'Raleway', sans-serif !important;
+    color:#44423c !important;
 }
 body.dark{
     background-color: #f9db6d !important; //425263
@@ -23,10 +24,10 @@ body.dark{
 app-route {
     background-color:red;
 }
-h1 {
-    color:#000 !important;
-    font-variant:small-caps;
-}
+// h1 {
+//     color:#000 !important;
+//     //font-variant:small-caps;
+// }
 .container{
     margin-bottom:5% !important;
 }
@@ -53,11 +54,12 @@ p {
     //border-top-left-radius: 50px;
     //border-top-right-radius: 50px;
     //padding: 1%;
-    background-color: #FFF;
+    height:65vh;
+    background-color: #fff9d9;
     margin-top: 16vh;
-    box-shadow: 0px 2px 13px #cacaca;
+    box-shadow: none;
     border:none;
-    color: #000;
+    //color: #000;
     //border-radius: 1px;
     h1 {
         color:unset !important;
@@ -85,19 +87,21 @@ p {
         padding-top:1.5%;
     }
     .about {
-        border-bottom:1px solid #cacaca;
-        font-variant:small-caps;
-        //background-color:#f9db6d;
+        // border-bottom:1px solid #cacaca;
+        //border:1em solid #fff;
+        //border-bottom:none;
+        //font-variant:small-caps;
+        background-color:#fff9d9;
     }
 }
 
-.navbar-default .navbar-nav > .active{
-    color: pink;
-    background: #d65c14;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #000;
-    background: #d65c14;
-}
+// .navbar-default .navbar-nav > .active{
+//     color: pink;
+//     background: #d65c14;
+// }
+// .navbar-default .navbar-nav > .active > a,
+// .navbar-default .navbar-nav > .active > a:hover,
+// .navbar-default .navbar-nav > .active > a:focus {
+//     color: #000;
+//     background: #d65c14;
+// }

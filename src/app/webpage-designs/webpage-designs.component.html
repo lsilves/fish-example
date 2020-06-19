@@ -1,46 +1,25 @@
-<!-- 
 
-
-<div class="container" style="margin-top: 70px;">
-    <h1>Webpage Designs</h1>
-    <p>This section shows some examples of webpages I've built. To enlarge an image, click on the thumbnail.</p><br>
-    <div   *ngFor="let graphic of graphics">
-      <table class="table table-responsive scroll-table">
-        <thead>
-          <tr>
-            <th>Thumbnail</th>
-            <th>Description</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <img [src]="graphic.image" class="thumbnail-img" *ngIf="!graphic.enlargeImage" (click)="graphic.enlargeImage = !graphic.enlargeImage" [alt]="graphic.alt">
-              <img [src]="graphic.image" class="enlarged-img" *ngIf="graphic.enlargeImage" (click)="graphic.enlargeImage = !graphic.enlargeImage" [alt]="graphic.alt">
-            </td>
-            <td> 
-              {{ graphic.description }} <span *ngIf="graphic.siteURL == 'https://dreamy-yonath-9e7f5b.netlify.app/home'"> <a href='https://dreamy-yonath-9e7f5b.netlify.app/admin'>please feel free to test this feature.</a> Note: search is not currently enabled.</span><br><br>
-              <span><b>Tools:</b> {{graphic.tools}}</span><span *ngIf="graphic.siteURL == 'https://dreamy-yonath-9e7f5b.netlify.app/home'"><a href='https://startbootstrap.com/templates/blog'>Bootstrap's Blog Design Template</a></span>
-            </td>
-            <td>
-              <a [href]="graphic.siteURL" target="_blank"><div class="btn" *ngIf="graphic.siteURL != ''">View</div></a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>  -->
-  
   
   <div class="container  h-100">
-    <!-- <div class="row"> -->
       
         <div class="col-sm-12  no-padding">
-            <div class="row about">
-                <h1>Webpages</h1>
-                <!-- <p>This section shows some examples of webpages I've built. To enlarge an image, click on the thumbnail.</p> -->
-            </div>
+            <!-- <div class="row about">
+                <h1>Work</h1>
+            </div> -->
+            <div class="h-100 row align-items-center" id="aboutTitle">
+              <div  class="mx-auto page-title w-50">
+                  <h1 >WORK</h1>
+                  <!-- <div class="meContact d-flex">
+                      <span style="font-size: 1.25rem;margin-right: 0.5rem;padding-right: 0.5rem;padding-top: 0.5rem;margin-top: -0.25rem;border-right: 1px solid black;">ME</span>
+                      <span style="font-size: 1.25rem;line-height: 1.2rem;margin-top: 0.5rem;">CONTACT</span>
+                  </div> -->
+                  <div class="h-5 w-100 scroll-down">
+                      <span class="material-icons" style="text-shadow:none;">
+                          arrow_drop_down
+                      </span>
+                  </div>
+              </div>
+          </div>
             <div class="row">   
 
               <div class="arrows col my-auto">
@@ -75,6 +54,3 @@
 
     <!-- </div> -->
 </div>
-<script>
-  AOS.init();
-</script>

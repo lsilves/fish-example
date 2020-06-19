@@ -10,6 +10,10 @@ export class AboutComponent implements OnInit {
   how = false;
   interests = false;
 
+  aboutTitle = true;
+  aboutContent = false;
+  aboutContact = false;
+
   constructor() { }
 
 
@@ -48,7 +52,36 @@ export class AboutComponent implements OnInit {
         this.how = false;
       }
       break;
+      default: {
+        this.who = false;
+        this.how = false;
+        this.interests = false;
+      }
     }
+  }
 
+  toggleSection(sec){
+    switch(sec){
+      case "aboutContent": {
+        this.aboutContent = true;
+        this.aboutTitle = false;
+        this.aboutContact = false;
+      }
+      break;
+      case "aboutTitle": {
+        this.aboutContent = false;
+        this.aboutTitle = true;
+        this.aboutContact = false;
+        this.switchPar('');
+      }
+      break;
+      case "aboutContact": {
+        this.aboutContent = false;
+        this.aboutTitle = false;
+        this.aboutContact = true;
+        this.switchPar('');
+      }
+      break;
+    }
   }
 }

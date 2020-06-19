@@ -1,24 +1,64 @@
 <div class="container">
     <!-- <div class="row"> -->
-        <div class="col-sm-12 no-padding">
-            <div class="row about">
-                <h1>About</h1>
+        <div class="h-100 row align-items-center" id="aboutTitle" *ngIf="aboutTitle">
+            <div  class="mx-auto page-title w-50">
+                <h1 >ABOUT</h1>
+                <!-- <div class="meContact d-flex">
+                    <span style="font-size: 1.25rem;margin-right: 0.5rem;padding-right: 0.5rem;padding-top: 0.5rem;margin-top: -0.25rem;border-right: 1px solid black;">ME</span>
+                    <span style="font-size: 1.25rem;line-height: 1.2rem;margin-top: 0.5rem;">CONTACT</span>
+                </div> -->
+                <div class="h-5 w-100 scroll-down" (click)="toggleSection('aboutContent')" >
+                    <span class="material-icons" style="text-shadow:none;">
+                        arrow_drop_down
+                    </span>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4 graphics my-auto">
-                <img src="https://i.imgur.com/6P7qtR7.png">
-            </div>
-            <div class="col-sm-8" id="divider">
-                    <h5 id="who" (click)="openPar('who');">who am i?</h5>
-                    <p *ngIf="who">I am a freshly minted web developer, currently looking to work in a front-end development position. I have a background in e-commerce, consisting of building CMS components, designing and developing corporate webpages, and maintaining various internal tools. I am especially passionate about UX and UI design. </p>
-                    <h5 id="how" (click)="openPar('how');">how i got here</h5>
-                    <p *ngIf="how">Before receiving Seneca College’s Computer Programming diploma, I completed a B.A. in Sociology at the University of Guelph. As an undergrad, I developed an interest in how people interact with technology, and took courses on computer systems and user interface design. Entering a new academic field with the goal of becoming a web developer, I had the opportunity to intern as a full-stack developer for Softchoice. During my co-op, I built product pages for multi-million dollar clients, maintained internal tools and sections of the Softchoice website, and built reuseable components for a new headless CMS. </p>
-                    <h5 id="interests" (click)="openPar('interests');">my interests</h5>
-                    <p *ngIf="interests">Working in a creative and technical field, I draw a lot of inspiration from science fiction. William Gibson’s Neuromancer and Ursula Leguin’s The Left Hand of Darkness are long time favourites in terms of novels, while Black Mirror and Futurama are my favourite TV series. Exercise and being outdoors with loved ones are central to my wellbeing - a precept I live out through activities such as sailing, skiing, and camping. </p>
-                    <hr>
-                    <p style="margin-left:0;">Reach out to <i>laura.susanne.ilves@gmail.com</i> to connect with me.</p>
+        <div class="row h-100" id="aboutContent" *ngIf="aboutContent">
+                <div class="col-sm-12 mx-auto my-auto d-flex flex-column">
+                    <div class="p-2 h-5  scroll-down" (click)="toggleSection('aboutTitle')">
+                        <span class="material-icons">
+                            arrow_drop_up
+                        </span>
+                    </div>
+                    <div class="p-2">
+                        <div class="row h-50">
+                            <div class="col-sm-8 my-auto" id="divider">
+                                <h5 id="who" (click)="openPar('who');">who am i?</h5>
+                                <p *ngIf="who" class="text-left">I am a freshly minted web developer, currently looking to work in a front-end development position. I have a background in full-stack development, consisting of building CMS components, designing and developing corporate webpages, and maintaining various internal tools. I am especially passionate about UX and UI design. </p>
+                                <h5 id="how" (click)="openPar('how');">how i got here</h5>
+                                <p *ngIf="how" class="text-left">Before receiving Seneca College’s Computer Programmer diploma, I completed a B.A. in Sociology at the University of Guelph. As an undergrad, I developed an interest in how people interact with technology, and took courses on computer systems and user interface design. Entering a new academic field with the goal of becoming a web developer, I had the opportunity to intern as a full-stack developer for Softchoice. During my co-op, I built product pages for multi-million dollar clients, maintained internal tools and sections of the Softchoice website, and built reuseable components for a new headless CMS. </p>
+                                <h5 id="interests" (click)="openPar('interests');">my interests</h5>
+                                <p *ngIf="interests" class="text-left">In my free time, I am a big healthcare and wellness advocate, with a focus on mental wellness. I have previously co-published a paper on the portrayal of mental health in film; likewise, I am currently building an application that facilitates the writing of psychiatric assessments. Central to my own conception of wellbeing are exercise and being outdoors with loved ones - precepts I live out through activities such as sailing, skiing, and camping. </p>
+                            </div>
+                            <div class="col-sm-4 graphics my-auto mx-auto">
+                                <img src="https://i.imgur.com/h7TVPFX.png" class="headshot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 h-5 scroll-down" (click)="toggleSection('aboutContact')">
+                        <span class="material-icons">
+                            arrow_drop_down
+                        </span>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="h-100 row align-items-center" id="aboutContact" *ngIf="aboutContact">
+            <div  class="mx-auto">
+                <div class="p-2 h-5 w-100 scroll-down" (click)="toggleSection('aboutContent')">
+                    <span class="material-icons">
+                        arrow_drop_up
+                    </span>
+                </div>
+
+                <p style="margin-left:0;">Reach out to <i>laura.susanne.ilves@gmail.com</i> to connect with me.</p>
+                <span (click)="toggleSection('aboutTitle')" class="div-link">Return to top</span><br>
+
             </div>
         </div>
     <!-- </div> -->
 </div>
+
+
+
