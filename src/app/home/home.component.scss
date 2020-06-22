@@ -6,6 +6,10 @@ a {
     text-decoration:underline;
 }
 
+a:hover {
+    opacity:0.5;
+}
+
 .welcome {
     font-size:4rem;
     color:black;

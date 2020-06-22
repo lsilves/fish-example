@@ -29,7 +29,7 @@ app-route {
 //     //font-variant:small-caps;
 // }
 .container{
-    margin-bottom:5% !important;
+    margin-bottom:2.5% !important;
 }
 .btn {
     border-radius:33px !important;
@@ -54,7 +54,7 @@ p {
     //border-top-left-radius: 50px;
     //border-top-right-radius: 50px;
     //padding: 1%;
-    height:65vh;
+    height:68vh !important;
     background-color: #fff9d9;
     margin-top: 16vh;
     box-shadow: none;
@@ -105,3 +105,7 @@ p {
 //     color: #000;
 //     background: #d65c14;
 // }
+
+.scroll-down:hover{
+    color:#b3a87e;
+}

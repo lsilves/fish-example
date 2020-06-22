@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WebpageDesignsComponent implements OnInit {
 
+  workTitle  = true;
+  workContent = false; 
   curSlide = 0;
   graphics = [
     {
