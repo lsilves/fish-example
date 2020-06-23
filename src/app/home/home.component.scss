@@ -41,7 +41,7 @@ a:hover {
 .lead {
     overflow:hidden;
     position:fixed;
-    margin-left:7.5%
+    //margin-left:7.5%
 }
 // @media only screen and (max-width: 700px) {
 //     .welcome {
@@ -52,24 +52,31 @@ a:hover {
 //         margin-right:50%;
 //     }
 // }
+
+.sunflower {
+    margin-left:7.5%;
+}
+
 @media only screen and (max-width: 985px) {
     .welcome {
         font-size:4rem !important;
     }
     .sunflower {
-        margin-top:75%;
-        margin-right:50%;
+        margin-left:auto;
+        margin-top:5%;
+        margin-right:auto;
     }
 }
 @media only screen and (max-width: 575px) {
     .welcome {
         font-size:4rem !important;
+        width:100vw;
     }
     .sunflower {
         max-width:35%;
         max-height:200px;
-        margin-top:75%;
-        margin-left:-33%;
+        //margin-top:75%;
+        //margin-left:-33%;
     }
 }
 @media only screen and (max-width: 450px) {
@@ -80,8 +87,8 @@ a:hover {
         max-width:30%;
         max-height:200px;
 
-        margin-top:75%;
-        margin-left:-33%;
+        //margin-top:75%;
+        //margin-left:-33%;
     }
 }
 @media only screen and (max-width: 350px) {
@@ -91,18 +98,8 @@ a:hover {
     .sunflower {
         max-width:20%;
         max-height:200px;
-        margin-top:85%;
-        //margin-right:75%;
-        margin-left:-33%;
+        //margin-top:85%;
+        //margin-left:-33%;
     }
 }
 
-// @media only screen and (max-height: 745px) {
-//     .sunflower {
-//         max-width:20%;
-//         max-height:200px;
-
-//         margin-top:75%;
-//         margin-left:-33%;
-//     }
-// }
