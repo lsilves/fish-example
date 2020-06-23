@@ -22,7 +22,7 @@ export class WebpageDesignsComponent implements OnInit {
     },
     {
       image: "https://i.imgur.com/Zzm2pVQ.png",
-      description: "A mock-up of a fabric store's catalogue.",
+      description: "A mock-up of a fabric store's catalogue with a filtering system.",
       tools: "Adobe XD",
       siteURL: "",
       alt: "fabric store catalogue",
@@ -40,7 +40,7 @@ export class WebpageDesignsComponent implements OnInit {
     },
     {
       image:"https://i.imgur.com/bF5epbB.gif",
-      description:"Blog web app - includes a Content Management System section for site administrators; ",
+      description:"Blog web app - includes a Content Management System section for site administrators.",
       tools: "Angular, ",
       siteURL: "https://dreamy-yonath-9e7f5b.netlify.app/home",
       alt: "blog web app",
@@ -74,10 +74,11 @@ export class WebpageDesignsComponent implements OnInit {
     for(var i = 0; i < this.graphics.length; i++){
       this.graphics[i].enlargeImage = false;
     }
-
     document
       .getElementById('slide'+this.curSlide)
       .scrollIntoView({ behavior: 'smooth' });
+
+
   }
 
   // openPar(par){
