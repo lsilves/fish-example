@@ -109,3 +109,34 @@ p {
 .scroll-down:hover{
     color:#b3a87e;
 }
+
+.mx-auto {
+    text-align:center;
+    .scroll-down {
+        //position:inherit;
+        margin-top:2.5%;
+        display:inline-block;
+        opacity: 0;
+    }
+}
+
+.container:hover {
+    .scroll-down {
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 0.75s;
+        display:inline-block;
+        cursor:pointer;
+    }
+    @keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            
+        }
+    }
+}

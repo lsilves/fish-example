@@ -44,15 +44,15 @@ h5 {
     text-shadow: -1px 1px #ccc6a6;
 }
 
-.mx-auto {
-    text-align:center;
-    .scroll-down {
-        //position:inherit;
-        margin-top:2.5%;
-        display:inline-block;
-        opacity: 0;
-    }
-}
+// .mx-auto {
+//     text-align:center;
+//     .scroll-down {
+//         //position:inherit;
+//         margin-top:2.5%;
+//         display:inline-block;
+//         opacity: 0;
+//     }
+// }
 
 .container {
     background-image: url(https://i.imgur.com/EEg9e7c.png);
@@ -62,8 +62,8 @@ h5 {
     .graphics {
         .headshot {
             box-shadow: 0 3px 5px rgb(224, 221, 202);
-            max-height:16em;
         }
+        margin-bottom:1em !important;
     }
     height:68vh;
 }
@@ -73,24 +73,28 @@ h5 {
     cursor:pointer;
 }
 
-.container:hover {
-    .scroll-down {
-        opacity: 1;
-        animation-name: fadeInOpacity;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-duration: 0.75s;
-        display:inline-block;
-        cursor:pointer;
-    }
-    @keyframes fadeInOpacity {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
+// .container:hover {
+//     .scroll-down {
+//         opacity: 1;
+//         animation-name: fadeInOpacity;
+//         animation-iteration-count: 1;
+//         animation-timing-function: ease-in;
+//         animation-duration: 0.75s;
+//         display:inline-block;
+//         cursor:pointer;
+//     }
+//     @keyframes fadeInOpacity {
+//         0% {
+//             opacity: 0;
+//         }
+//         100% {
+//             opacity: 1;
             
-        }
-    }
+//         }
+//     }
+// }
+
+.returnTop:hover{
+    opacity:0.5;
 }
 

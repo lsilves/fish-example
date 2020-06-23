@@ -46,10 +46,10 @@ h1 {
     overflow:hidden;
     .content {
         overflow:auto;
-        height:68vh;
+        height:50vh;
     }
     .slide {
-        height:68vh;
+        height:50vh;
     }
     height:68vh;
 }
@@ -101,30 +101,45 @@ h5 {
     height: 68vh; // PLEASE REMOVE THESE
 }
 
-.mx-auto{
-    text-align: center;
-    .scroll-down{
-        opacity: 0;
-    }
+// .scroll-down {
+//     opacity:0;
+// }
+
+// .mx-auto{
+//     text-align: center;
+//     .scroll-down{
+//         opacity: 0;
+//     }
+// }
+
+// .container:hover {
+//     .scroll-down {
+//         opacity: 1;
+//         animation-name: fadeInOpacity;
+//         animation-iteration-count: 1;
+//         animation-timing-function: ease-in;
+//         animation-duration: 0.75s;
+//         display:inline-block;
+//         cursor:pointer;
+//     }
+//     @keyframes fadeInOpacity {
+//         0% {
+//             opacity: 0;
+//         }
+//         100% {
+//             opacity: 1;
+            
+//         }
+//     }
+// }
+
+.returnTop {
+    position:fixed;
+    text-decoration:underline;
+    cursor:pointer;
+    margin-left:-2em;
 }
 
-.container:hover {
-    .scroll-down {
-        opacity: 1;
-        animation-name: fadeInOpacity;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-duration: 0.75s;
-        display:inline-block;
-        cursor:pointer;
-    }
-    @keyframes fadeInOpacity {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-            
-        }
-    }
+.returnTop:hover {
+    opacity:0.5;
 }

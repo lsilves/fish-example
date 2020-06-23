@@ -55,6 +55,10 @@ export class WebpageDesignsComponent implements OnInit {
     this.graphics[oldSlide].display = false;
     this.graphics[this.curSlide].display = true;
 
+    for(var i = 0; i < this.graphics.length; i++){
+      this.graphics[i].enlargeImage = false;
+    }
+
     document
       .getElementById('slide'+this.curSlide)
       .scrollIntoView({ behavior: 'smooth' });
@@ -66,6 +70,10 @@ export class WebpageDesignsComponent implements OnInit {
     this.curSlide != (this.graphics.length-1) ? this.curSlide++ : this.curSlide = 0;
     this.graphics[oldSlide].display = false;
     this.graphics[this.curSlide].display = true;
+
+    for(var i = 0; i < this.graphics.length; i++){
+      this.graphics[i].enlargeImage = false;
+    }
 
     document
       .getElementById('slide'+this.curSlide)

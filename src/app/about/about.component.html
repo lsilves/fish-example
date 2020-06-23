@@ -14,6 +14,8 @@
                 </div>
             </div>
         </div>
+
+
         <div class="row h-100" id="aboutContent" *ngIf="aboutContent">
                 <div class="col-sm-12 mx-auto my-auto d-flex flex-column">
                     <div class="p-2 h-5  scroll-down" (click)="toggleSection('aboutTitle')">
@@ -23,7 +25,7 @@
                     </div>
                     <div class="p-2">
                         <div class="row h-50">
-                            <div class="col-sm-8 my-auto" id="divider">
+                            <div class="col-sm-12 my-auto" id="divider">
                                 <h5 id="who" (click)="openPar('who');">who am i?</h5>
                                 <p *ngIf="who" class="text-left">I am a freshly minted web developer, currently looking to work in a front-end development position. I have a background in full-stack development, consisting of building CMS components, designing and developing corporate webpages, and maintaining various internal tools. I am especially passionate about UX and UI design. </p>
                                 <h5 id="how" (click)="openPar('how');">how i got here</h5>
@@ -31,9 +33,9 @@
                                 <h5 id="interests" (click)="openPar('interests');">my interests</h5>
                                 <p *ngIf="interests" class="text-left">In my free time, I am a big healthcare and wellness advocate, with a focus on mental wellness. I have previously co-published a paper on the portrayal of mental health in film; likewise, I am currently building an application that facilitates the writing of psychiatric assessments. Central to my own conception of wellbeing are exercise and being outdoors with loved ones - precepts I live out through activities such as sailing, skiing, and camping. </p>
                             </div>
-                            <div class="col-sm-4 graphics my-auto mx-auto">
+                            <!-- <div class="col-sm-4 graphics my-auto mx-auto">
                                 <img src="https://i.imgur.com/h7TVPFX.png" class="headshot">
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="p-2 h-5 scroll-down" (click)="toggleSection('aboutContact')">
@@ -44,16 +46,22 @@
                 </div>
             
         </div>
+
+
         <div class="h-100 row align-items-center" id="aboutContact" *ngIf="aboutContact">
             <div  class="mx-auto">
-                <div class="p-2 h-5 w-100 scroll-down" (click)="toggleSection('aboutContent')">
+                <div class="p-2 h-5 w-100 scroll-down" style="margin-bottom:4rem" (click)="toggleSection('aboutContent')">
                     <span class="material-icons">
                         arrow_drop_up
                     </span>
                 </div>
+                <div class="col-sm-4 graphics my-auto mx-auto">
+                    <img src="https://i.imgur.com/h7TVPFX.png" class="headshot">
+                </div>
 
-                <p style="margin-left:0;">Reach out to <i>laura.susanne.ilves@gmail.com</i> to connect with me.</p>
-                <span (click)="toggleSection('aboutTitle')" class="div-link">Return to top</span><br>
+
+                <p style="margin-left:0;margin-bottom:4rem;">Reach out to <i>laura.susanne.ilves@gmail.com</i> to connect with me.</p>
+                <span (click)="toggleSection('aboutTitle')" class="div-link returnTop">Return to top</span><br>
 
             </div>
         </div>

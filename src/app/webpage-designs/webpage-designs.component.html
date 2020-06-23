@@ -14,36 +14,48 @@
               </div>
           </div>
           <div class="row" id="workContent" *ngIf="workContent">   
-            <div class="p-2 h-5  scroll-down" (click)="workTitle=true;workContent=false;" >
-              <span class="material-icons">
-                  arrow_drop_up
+            <div class="p-1 col-12 mx-auto">
+              <span class="returnTop" (click)="workTitle=true;workContent=false;" >
+                Return to Top
               </span>
+              <div class="scroll-down">
+                <span id="arrow-left" class="material-icons" (click)="prevSlide()">
+                  arrow_drop_up
+                </span>
+              </div>
           </div>
-            <div class="arrows col my-auto">
-              <img id="arrow-left" src="https://i.imgur.com/0BFz4a9.png" (click)="prevSlide()">
-            </div>
+            <!-- <div class="mx-auto scroll-down"> -->
+
+            <!-- </div> -->
   
-            <div class="content col-10 my-auto">        
+
+            <div class="content col-12 my-auto">        
               <div *ngFor="let graphic of graphics; index as i" class="flex-row d-flex slide" [attr.id]="'slide' + i">
-                    <div class="my-auto flex-column col-6 graphics" [className]="graphic.enlargeImage ? 'my-auto mx-auto flex-column col-10 graphics' : 'my-auto mx-auto flex-column col-6 graphics'">
+                    <div class="my-auto flex-column col-6 graphics" [className]="graphic.enlargeImage ? 'my-auto mx-auto flex-column col-7 graphics' : 'my-auto mx-auto flex-column col-6 graphics'">
                       <img [src]="graphic.image" class="thumbnail-img" *ngIf="!graphic.enlargeImage" (click)="graphic.enlargeImage = !graphic.enlargeImage" [alt]="graphic.alt">
                       <img [src]="graphic.image" class="enlarged-img" *ngIf="graphic.enlargeImage" (click)="graphic.enlargeImage = !graphic.enlargeImage" [alt]="graphic.alt">
                     </div>
-                    <div class="my-auto flex-column" [className]="graphic.enlargeImage ? 'my-auto flex-column mx-auto graphics col-2' : 'my-auto flex-column mx-auto graphics col-6'">
+                    <div class="my-auto flex-column" [className]="graphic.enlargeImage ? 'my-auto flex-column mx-auto graphics col-5' : 'my-auto flex-column mx-auto graphics col-6'">
                             <h5 id="who">description</h5>
                             <p>{{ graphic.description }}</p>
                             <h5 id="how">tools</h5>
                             <p>{{ graphic.tools }}</p>
                             <span><a [href]="graphic.siteURL" target="_blank"><div class="btn" *ngIf="graphic.siteURL != ''">View</div></a></span>
-
                     </div>
                 </div>
-
             </div>
   
-            <div class="arrows col my-auto">
-              <img id="arrow-right" src="https://i.imgur.com/wnxQ7Fy.png" (click)="nextSlide()">
-            </div>
+            <div class="p-1 col-12 mx-auto">
+              <div class="scroll-down">
+                <span id="arrow-right" class="material-icons" (click)="nextSlide()">
+                  arrow_drop_down
+                </span>
+              </div>
+          </div>
+
+            <!-- <div class="col my-auto mx-auto scroll-down"> -->
+
+            <!-- </div> -->
   
           </div>
         <!-- </div> -->
