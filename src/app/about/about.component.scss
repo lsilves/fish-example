@@ -73,22 +73,22 @@ h5 {
     cursor:pointer;
 }
 
-// .container {
-//     animation-name: fadeInBg;
-//     animation-iteration-count: 1;
+.container {
+    animation-name: fadeInBg;
+    animation-iteration-count: 1;
 
-//     animation-timing-function: ease-in;
-//     animation-duration: 2.25s;
-//     @keyframes fadeInBg {
-//         0% {
-//             background-image: url(https://i.imgur.com/BxnBbqC.png);
-//         }
-//         100% {
-//             background-image: url(https://i.imgur.com/EEg9e7c.png);
+    animation-timing-function: ease-in;
+    animation-duration: 2.25s;
+    @keyframes fadeInBg {
+        0% {
+            background-image: url(https://i.imgur.com/BxnBbqC.png);
+        }
+        100% {
+            background-image: url(https://i.imgur.com/EEg9e7c.png);
             
-//         }
-//     }
-// }
+        }
+    }
+}
 
 
 .returnTop:hover{

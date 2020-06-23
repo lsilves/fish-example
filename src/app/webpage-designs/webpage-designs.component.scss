@@ -144,19 +144,19 @@ h5 {
     opacity:0.5;
 }
 
-// .container {
-//     animation-name: fadeInBg;
-//     animation-iteration-count: 1;
+.container {
+    animation-name: fadeInBg;
+    animation-iteration-count: 1;
 
-//     animation-timing-function: ease-in;
-//     animation-duration: 2.25s;
-//     @keyframes fadeInBg {
-//         0% {
-//             background-image: url(https://i.imgur.com/rrkM8uF.jpg);
-//         }
-//         100% {
-//             background-image: url(https://i.imgur.com/YfWl2UJ.png);
+    animation-timing-function: ease-in;
+    animation-duration: 2.25s;
+    @keyframes fadeInBg {
+        0% {
+            background-image: url(https://i.imgur.com/rrkM8uF.jpg);
+        }
+        100% {
+            background-image: url(https://i.imgur.com/YfWl2UJ.png);
             
-//         }
-//     }
-// }
+        }
+    }
+}
