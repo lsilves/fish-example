@@ -41,7 +41,7 @@ export class WebpageDesignsComponent implements OnInit {
     {
       image:"https://i.imgur.com/bF5epbB.gif",
       description:"Blog web app - includes a Content Management System section for site administrators.",
-      tools: "Angular, Bootstrapius",
+      tools: "Angular, Bootstrapious",
       siteURL: "https://dreamy-yonath-9e7f5b.netlify.app/home",
       alt: "blog web app",
       enlargeImage: false,
