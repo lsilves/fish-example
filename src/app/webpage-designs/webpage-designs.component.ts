@@ -32,7 +32,7 @@ export class WebpageDesignsComponent implements OnInit {
     {
       image: "https://i.imgur.com/Rky4G98.gif",
       description: "A psychiatric assessment facilitator in the process of being developed.",
-      tools: "MongoDB, Bootstrap, Angular 8, SCSS, JavaScript, HTML, Heroku, Mongoose",
+      tools: "MongoDB, Bootstrap, Angular 8, SCSS, JavaScript, HTML, Heroku, Mongoose, NPM, Git",
       siteURL: "",
       alt: "psychiatric assessment facilitator",
       enlargeImage: false,
