@@ -23,9 +23,18 @@ export class WebpageDesignsComponent implements OnInit {
     {
       image: "https://i.imgur.com/Rky4G98.gif",
       description: "A psychiatric assessment facilitator in the process of being developed.",
-      tools: "MongoDB, Bootstrap, Angular 8, SCSS, JavaScript, HTML, Heroku, Mongoose, NPM, Git",
+      tools: "MongoDB, Bootstrap, Angular 8, Heroku, Mongoose, NPM, Git",
       siteURL: "",
       alt: "psychiatric assessment facilitator",
+      enlargeImage: false,
+      display:false
+    },
+    {
+      image: "https://i.imgur.com/rgTaiL4.gif",
+      description: "This portfolio, for which an earlier dark-theme design was scrapped. Along with a softer colour scheme, the new design is more responsive to different devices and more interactive for users.",
+      tools: "Adobe XD, Angular 8, Bootstrap, HTML, Netlify, NPM, Git",
+      siteURL: "https://laura-portfolio.netlify.app/",
+      alt: "my portfolio",
       enlargeImage: false,
       display:false
     },
@@ -50,7 +59,7 @@ export class WebpageDesignsComponent implements OnInit {
     {
       image:"https://i.imgur.com/bF5epbB.gif",
       description:"Blog web app - includes a Content Management System section for site administrators.",
-      tools: "Angular, Bootstrapious, NPM, Git",
+      tools: "Angular 8, Bootstrapious, NPM, Git",
       siteURL: "https://dreamy-yonath-9e7f5b.netlify.app/home",
       alt: "blog web app",
       enlargeImage: false,

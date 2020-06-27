@@ -9,7 +9,7 @@ import { AboutComponent } from './about/about.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent, data: { bodyClass: 'dark' } },
   { path: 'work', component: WebpageDesignsComponent },
-  { path: 'graphics', component: AssortedGraphicsComponent },
+  //{ path: 'graphics', component: AssortedGraphicsComponent },
   { path: 'about', component: AboutComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
