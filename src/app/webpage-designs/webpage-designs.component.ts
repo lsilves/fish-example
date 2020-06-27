@@ -30,6 +30,15 @@ export class WebpageDesignsComponent implements OnInit {
       display:false
     },
     {
+      image: "https://i.imgur.com/Rky4G98.gif",
+      description: "A psychiatric assessment facilitator in the process of being developed.",
+      tools: "MongoDB, Bootstrap, Angular 8, SCSS, JavaScript, HTML, Heroku, Mongoose",
+      siteURL: "",
+      alt: "psychiatric assessment facilitator",
+      enlargeImage: false,
+      display:false
+    },
+    {
       image:"https://i.imgur.com/NZeOGHz.gif",
       description:"Customer sales web app.",
       tools: "React, Bootstrap",
@@ -47,6 +56,7 @@ export class WebpageDesignsComponent implements OnInit {
       enlargeImage: false,
       display:false
     }
+
   ];
 
   prevSlide(){
