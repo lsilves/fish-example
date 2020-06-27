@@ -32,7 +32,7 @@ export class WebpageDesignsComponent implements OnInit {
     {
       image: "https://i.imgur.com/rgTaiL4.gif",
       description: "This portfolio, for which an earlier dark-theme design was scrapped. Along with a softer colour scheme, the new design is more responsive to different devices and more interactive for users.",
-      tools: "Adobe XD, Angular 8, Bootstrap, HTML, Netlify, NPM, Git, Google Fonts, Material Designs (icons)",
+      tools: "Adobe XD, Angular 8, Bootstrap, HTML, Netlify, NPM, Git, Google Fonts, Material Design (icons)",
       siteURL: "https://laura-portfolio.netlify.app/",
       alt: "my portfolio",
       enlargeImage: false,
