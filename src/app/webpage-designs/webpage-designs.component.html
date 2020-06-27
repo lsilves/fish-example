@@ -35,12 +35,14 @@
                       <img [src]="graphic.image" class="thumbnail-img" *ngIf="!graphic.enlargeImage" (click)="graphic.enlargeImage = !graphic.enlargeImage" [alt]="graphic.alt">
                       <img [src]="graphic.image" class="enlarged-img" *ngIf="graphic.enlargeImage" (click)="graphic.enlargeImage = !graphic.enlargeImage" [alt]="graphic.alt">
                     </div>
-                    <div class="my-auto flex-column" [className]="graphic.enlargeImage ? 'my-auto flex-column mx-auto graphics col-5' : 'my-auto flex-column mx-auto graphics col-6'">
+                    <div class="my-auto flex-column" [className]="graphic.enlargeImage ? 'my-auto flex-column mx-auto graphics col-5' : 'my-auto flex-column mx-auto graphics col-6'" style="text-align:left;">
+                      <span style="float:right;"><a [href]="graphic.siteURL" target="_blank"><div class="btn" *ngIf="graphic.siteURL != ''" style="min-width:7rem;">View</div></a></span>
+                      <h3>{{ graphic.title }}</h3>                            
                             <h5>description</h5>
                             <p>{{ graphic.description }}</p>
                             <h5>tools</h5>
                             <p>{{ graphic.tools }}</p>
-                            <span><a [href]="graphic.siteURL" target="_blank"><div class="btn" *ngIf="graphic.siteURL != ''">View</div></a></span>
+
                     </div>
                 </div>
             </div>

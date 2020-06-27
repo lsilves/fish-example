@@ -12,24 +12,7 @@ export class WebpageDesignsComponent implements OnInit {
   curSlide = 0;
   graphics = [
     {
-      image: "https://i.imgur.com/a5Iv47T.gif",
-      description: "Softchoice events section that I designed during my co-op.",
-      tools: "Adobe XD, HTML, Vanilla JavaScript, SCSS",
-      siteURL: "https://www.softchoice.com/research-studio/events",
-      alt: "Softchoice events",
-      enlargeImage: false,
-      display:false
-    },
-    {
-      image: "https://i.imgur.com/Rky4G98.gif",
-      description: "A psychiatric assessment facilitator in the process of being developed.",
-      tools: "MongoDB, Bootstrap, Angular 8, Heroku, Mongoose, NPM, Git",
-      siteURL: "",
-      alt: "psychiatric assessment facilitator",
-      enlargeImage: false,
-      display:false
-    },
-    {
+      title: "Portfolio",
       image: "https://i.imgur.com/rgTaiL4.gif",
       description: "This portfolio, for which an earlier dark-theme design was scrapped. Along with a softer colour scheme, the new design is more responsive to different devices and more interactive for users.",
       tools: "Adobe XD, Angular 8, Bootstrap, HTML, Netlify, NPM, Git, Google Fonts, Material Design (icons)",
@@ -39,6 +22,27 @@ export class WebpageDesignsComponent implements OnInit {
       display:false
     },
     {
+      title: "Section Redesign",
+      image: "https://i.imgur.com/a5Iv47T.gif",
+      description: "Softchoice events section that I designed and developed during my co-op.",
+      tools: "Adobe XD, HTML, Vanilla JavaScript, SCSS",
+      siteURL: "https://www.softchoice.com/research-studio/events",
+      alt: "Softchoice events",
+      enlargeImage: false,
+      display:false
+    },
+    {
+      title: "Assessment Facilitator",
+      image: "https://i.imgur.com/Rky4G98.gif",
+      description: "A psychiatric assessment facilitator in the process of being developed.",
+      tools: "MongoDB, Bootstrap, Angular 8, Heroku, Mongoose, NPM, Git",
+      siteURL: "",
+      alt: "psychiatric assessment facilitator",
+      enlargeImage: false,
+      display:false
+    },
+    {
+      title: "Catalogue Filter",
       image: "https://i.imgur.com/Zzm2pVQ.png",
       description: "A mock-up of a fabric store's catalogue with a filtering system.",
       tools: "Adobe XD",
@@ -48,6 +52,7 @@ export class WebpageDesignsComponent implements OnInit {
       display:false
     },
     {
+      title: "Sales App",
       image:"https://i.imgur.com/NZeOGHz.gif",
       description:"Customer sales web app.",
       tools: "React, Bootstrap, NPM, Git, MongoDB, Express",
@@ -57,6 +62,7 @@ export class WebpageDesignsComponent implements OnInit {
       display:false
     },
     {
+      title: "Blog",
       image:"https://i.imgur.com/bF5epbB.gif",
       description:"Blog web app - includes a Content Management System section for site administrators.",
       tools: "Angular 8, Bootstrapious, NPM, Git, MongoDB, Mongoose",
