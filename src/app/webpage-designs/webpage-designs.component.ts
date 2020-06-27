@@ -50,7 +50,7 @@ export class WebpageDesignsComponent implements OnInit {
     {
       image:"https://i.imgur.com/NZeOGHz.gif",
       description:"Customer sales web app.",
-      tools: "React, Bootstrap, NPM, Git",
+      tools: "React, Bootstrap, NPM, Git, MongoDB",
       siteURL: "https://enigmatic-sierra-63091.herokuapp.com/",
       alt: "customer sales app",
       enlargeImage: false,
@@ -59,7 +59,7 @@ export class WebpageDesignsComponent implements OnInit {
     {
       image:"https://i.imgur.com/bF5epbB.gif",
       description:"Blog web app - includes a Content Management System section for site administrators.",
-      tools: "Angular 8, Bootstrapious, NPM, Git",
+      tools: "Angular 8, Bootstrapious, NPM, Git, MongoDB, Mongoose",
       siteURL: "https://dreamy-yonath-9e7f5b.netlify.app/home",
       alt: "blog web app",
       enlargeImage: false,
